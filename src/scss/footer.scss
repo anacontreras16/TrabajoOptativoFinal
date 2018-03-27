@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    position:fixed;
+    bottom:0;
+    height: 50px;
+    background-color: $greenLaoca;
+    color: $white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    p{
+        font-size: 10pt;
+        margin: 0 auto auto;
+        margin-top: 20px;
+    }
+    a{
+        float: right;
+        font-size: 25pt;
+        background-color: white ; 
+        padding: 5px;
+        color: $greenLaoca;
+    }
+}

@@ -1,0 +1,114 @@
+#productDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    div{
+        margin-left:20px;
+        margin-top: 50px;
+        text-align: left;
+        h2{
+            font-weight: bolder;
+            margin-bottom: 15px;
+        }
+        #description{
+            font-size: 13pt;
+        }
+    }
+    #price{
+        font-style: italic;
+        font-size: 20pt;
+    }
+    #carrito{
+        background: url("img/carrito.png");
+        width: 150px;
+        height: 40px;
+        margin-top: 5px;
+    }
+    #carrito:hover{
+        background: url("img/carritogreen.png") no-repeat;
+    }
+    form{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        p{
+            font-size: 15pt;
+        }
+        b{
+            font-weight: bold;
+        }
+    }
+}
+//uso el importante porque la regla de arriba me sube demasiado la capa.
+#comentarios{    
+    margin-top: -15px !important;
+    width: 90%;
+    span{
+        font-size: 20px;
+    }
+}
+
+textarea{
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+
+
+@media only screen and (max-width: 414px){
+    #productDetail{
+        display: flex;
+        flex-direction: column;
+     
+        img{
+            width:90%;
+            height: auto;
+            margin: 0 auto 0 auto;
+        }
+        div{
+            h2{
+                font-weight: bolder;
+                margin-bottom: 15px;
+            }
+        }
+        #carrito{
+          margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 812px) and (min-width: 640px){
+    #productDetail{
+        display: flex;
+        flex-direction: column;
+        img{
+            margin:0 auto 0 auto;
+            width:80%;
+            height: auto;
+        }
+        div{
+            h2{
+                font-weight: bolder;
+                margin-bottom: 15px;
+            }
+        }
+        #carrito{
+          margin-bottom: 50px;
+        }
+    }
+}
+
+#compracorrecta{    
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+//Usamos Frames le decimos en que porcentaje de cada frame se mueva a X punto de la pantall
+    @keyframes movimientoCarrito {
+        0%   {background-color: red; left:0px;}
+        50%  {background-color: yellow; left:200px;}
+        100% {background-color: red; left:0px;}
+    }
